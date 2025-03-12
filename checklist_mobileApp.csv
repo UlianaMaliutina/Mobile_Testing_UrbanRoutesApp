@@ -1,0 +1,44 @@
+Checklist and test results for the Urban Lunch mobile app,,,
+,,,
+#,Description,Status,Link to bug report
+1,The map shows the pickup points,PASSED,
+2,By default none of pick-up points are selected,PASSED,
+3,"By tapping on a pick-up point, it's highlighted and considered selected",PASSED,
+4,Repeated tap on pick-up point deselects it,PASSED,
+5,"Tapping on a pick-up point when another pick-up point is
+selected changes the selection to the new pick-up point",PASSED,
+6,Dropdown list contains a list of restaurants from which it's possible to pick up order,PASSED,
+7,"When a restaurant from the dropdown list is selected, it's selected on map and considered selected",PASSED,
+8,The dishes are displayed as a list,PASSED,
+9,"Each dish contains the name of the dish, the -/+
+buttons, and an arrow",PASSED,
+10,Tapping on + adds the dish to the order list ,PASSED,
+11,"Tapping in any area of the dish(except for +) proceeds to the dish details
+screen",PASSED,
+12,There's a footer on the screen which shows the progress of the order,PASSED,
+13,"The footer contains 3 steps and button ""Next""(white arrow inside dark grey circle)",PASSED,
+14,"The button ""Next"" is inactive if there're no dishes in order",FAILED,https://ulyanamalyutina60195.atlassian.net/browse/P6UM-1?atlOrigin=eyJpIjoiODc2N2RjMmI4MWEzNDkxZWE3OGRhYjI5MzllNjJiNGEiLCJwIjoiaiJ9
+15,"The button ""Next"" becomes active after adding at least 1 dish to the order",PASSED,
+16,Inside dish details there's an arrow to the left of the dish name,PASSED,
+17,Pressing the return arrow in the dish details takes back to the dishes list,PASSED,
+18,Tapping on the restaurant name in the dish details the dish is added to the order,PASSED,
+19,The final list of order at the step 3 is scrollable(if it's too long),PASSED,
+20,The total amount at the 3 step contains the price of all prepared dishes and delivery,FAILED,https://ulyanamalyutina60195.atlassian.net/browse/P6UM-2?atlOrigin=eyJpIjoiNjA2ZDllMTZhZDYwNGRiZTg1MjdiMDYyZTQ1MmQ4MmUiLCJwIjoiaiJ9
+21,"A tap on the ""Order"" button proceeds to the order tracking screen",PASSED,
+22,The map at the order tracking screen shows the pick-up point,PASSED,
+23,The map at the order tracking screen shows the restaurants where the dishes are prepared,PASSED,
+24,The map at the order tracking screen shows the routes from the restaurants to the pick-up point,PASSED,
+25,The order tracking screen contains window with dishes and restaurants where they were prepared,PASSED,
+26,The order tracking screen contains window with cost of all dishes ordered at the restaurant,PASSED,
+27,The order tracking screen contains window with remaining cooking time from the restaurant to the pick-up point,FAILED,https://ulyanamalyutina60195.atlassian.net/browse/P6UM-3?atlOrigin=eyJpIjoiMjAwZjY0NzQ5ZGQ4NGU3NzlkOTAyMjYyZWNkMmM0ZmYiLCJwIjoiaiJ9
+28,The order tracking screen contains window with remaining delivery time from the restaurant to the pick-up point,PASSED,
+29,The list of dishes at the order tracking screen is scrollable(if it doesn't fit on the screen),PASSED,
+30,"When delivery time expires, app proceeds to ""Order is delivered"" screen automatically",PASSED,
+31,"The map on ""Order is delivered"" screen shows desired pick-up point location",FAILED,https://ulyanamalyutina60195.atlassian.net/browse/P6UM-4?atlOrigin=eyJpIjoiZDk4NzRmMTM4YWMwNDYyYjlkMGY4ZGNiMjJjOGZmODAiLCJwIjoiaiJ9
+32,"""Order is delivered"" screen has the button ""I got the order""",PASSED,
+33,"Clicking the button ""I got the order"" on ""Order is delivered"" screen completes the order",PASSED,
+34,After completing the order the feedback bar is shown,PASSED,
+35,After completing feedback bar app procedes to the beginning page(choosing pick-up point),PASSED,
+36,App without access to geolocation gives error message,PASSED,
+37,Attempt to order delivery without selecting dishes leads to error message ,PASSED,
+38,"The restaurant's name is below the dish ingredients(screen 2 ""Choose dishes"" in the ""Dish details""",FAILED,https://ulyanamalyutina60195.atlassian.net/browse/P6UM-5?atlOrigin=eyJpIjoiM2IxMDUwMGFlMjIwNDA1ZWI1YzVlZjYzMTZjZTJhNzgiLCJwIjoiaiJ9
