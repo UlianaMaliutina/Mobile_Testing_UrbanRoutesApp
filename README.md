@@ -1,7 +1,7 @@
 # Urban Lunch App Testing
 
 ## Project Description
-Urban Lunch is an Android application that allows users to order meals from various restaurants in the city and pick them up from designated collection points. This project involves testing the first version of the app to ensure its core functionalities work correctly. The primary focus is verifying the ordering process, from restaurant selection to order confirmation and collection.
+Urban Lunch is an Android application that allows users to order meals from various restaurants in the city and pick them up from designated collection points. This testing project contains the mobile app testing in the emulator (Android Studio) and creating bug reports in Jira, working with the app layouts in Figma. The primary focus is verifying the ordering process, from restaurant selection to order confirmation and collection.
 
 ## Technologies and Tools Used
 - **Android Emulator (Pixel 5)** – To test the application in a virtual environment.
